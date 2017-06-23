@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<style>
+	.jumbotron {
+		background-color: #fff;
+		color: #f4511e;
+		padding: 100px 25px;
+		font-family: Montserrat, sans-serif;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.navbar {
+		margin-bottom: 0;
+		background-color: #7a1daf;
+		z-index: 9999;
+		border:0;
+		font-size: 12px !important;
+		line-height: 1.43 !important;
+		letter-spacing: 4px;
+		border-radius: 0;
+		font-family: Montserrat, sans-serif;
+	}
+
+	.navbar li a, .navbar .navbar-brand {
+		color: #fff !important;
+	}
+
+	.navbar-nav li a:hover, navbar-nav li.active a {
+		color: #f4511e !important;
+		background-color: #fff !important;
+	}
+
+	.navbar-default .navbar-toggle {
+		border-color: transparent;
+		color: #fff !important;
+	}	
+
+	.mySlides {
+		display: none;
+	}
+
+	.w3-left, .w3-right, .w3-badge {
+		cursor: pointer;
+	}
+
+	.w3-badge {
+		height: 13px;
+		width: 13px;
+		padding: 0;
+	}
+
+	.bg-grey {
+		background-color: #f6f6f6;
+	}
+	body {
+		font: 400 15px Lato, sans-serif;
+		line-height: 1.8;
+		color: #818181;
+	}
+
+	@media screen and (max-width: 786px){
+		.col-sm-4 {
+			text-align: center;
+			margin: 25px 50px;
+		}
+	}	
+	.container-fluid {
+		padding: 20px 50px;
+	}
+
+	.aboutbike {
+		display: block;
+		margin: 0 auto;
+		max-width: 250px;
+	}
+
+	footer .glyphicon {
+		font-size: 20px;
+		margin-bottom: 20px;
+		color: #f4511e;
+	}
+
+	footer {
+		background-color: #7a1daf;
+	}
+
+
+</style>
+
+
+<body>
+	
+<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class= "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Cranked-Up Garage</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="findbike.html">FIND-A-BIKE</a></li>
+					<li><a href="#">FOR SALE</a></li>
+					<li><a href="#">VIDEOS AND WIKIS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- Picture slider -->
+<div class="w3-content w3-display-container" style="max-width: 800px">
+	<img class="mySlides" src="bike1.png" style="width:100%">
+	<img class="mySlides" src="bike2.png" style="width:100%">
+	<img class="mySlides" src="bike3.png" style="width:100%">
+	<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width: 100%">
+		<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		
+	</div>
+</div>
+
+<!-- Jumbotron -->
+	<div class="jumbotron text-center bg-grey">
+		<h1>About Cranked-Up Garage</h1>
+		<p>Here's a little about what we are and what we do. we like bikes. and boats. and writing incorrect sentences. i dont know english. this is google translate.</p>
+		<p>yup</p>
+	</div>
+
+<!-- Blurb -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4">
+			<span><img class="aboutbike" style="	width: 100%" src="bike2.png"></span>
+		</div>
+		<div class="col-sm-8 blurb">
+			<h2>Who are we?</h2>
+			<h4>We're baiscally nuts. Like, he is a peanut and im a walnut. I'll talk alot about bikes here and there because i dont know what else to type in here.im sitting at work waiting for script to fly by my screen and reset the program with new data every ten minutes or so. its raining outside</h4>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<a href="#" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Site Made by the world's coolest web developer-----Carla  <a href="#" title="check out my stuff">thecarla.com</a></p>
+	</footer>
+
+<!-- Slide Show thing -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<!-- Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+
+
+
+</body>

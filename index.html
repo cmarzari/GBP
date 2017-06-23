@@ -9,15 +9,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 
-
+<!-- CSS and Stuff -->
 <style>
 	.jumbotron {
 		background-color: #f4511e;
 		color: #ffffff;
 		padding: 100px 25px;
+		font-family: Montserrat, sans-serif;
+		height: 500px;
 	}	
 
 	.bg-grey {
@@ -86,16 +93,79 @@
 		font-style: normal;
 	}
 
-	h2 {
-		
+	.navbar {
+		margin-bottom: 0;
+		background-color: #7a1daf;
+		z-index: 9999;
+		border:0;
+		font-size: 12px !important;
+		line-height: 1.43 !important;
+		letter-spacing: 4px;
+		border-radius: 0;
+		font-family: Montserrat, sans-serif;
+	}
+
+	.navbar li a, .navbar .navbar-brand {
+		color: #fff !important;
+	}
+
+	.navbar-nav li a:hover, navbar-nav li.active a {
+		color: #f4511e !important;
+		background-color: #fff !important;
+	}
+
+	.navbar-default .navbar-toggle {
+		border-color: transparent;
+		color: #fff !important;
+	}
+
+	footer .glyphicon {
+		font-size: 20px;
+		margin-bottom: 20px;
+		color: #f4511e;
+	}
+
+		footer {
+		background-color: #7a1daf;
+	}
+
+	body {
+		font: 400 15px Lato, sans-serif;
+		line-height: 1.8;
+		color: #818181;
 	}
 
 </style>
 
 
-
+<!-- You Should know what this is for -->
 <body>
 
+
+<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class= "container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Cranked-Up Garage</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="findbike.html">FIND-A-BIKE</a></li>
+					<li><a href="#">FOR SALE</a></li>
+					<li><a href="#">VIDEOS AND WIKIS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- Jumbotron -->
 	<div class="jumbotron text-center">
 		<h1>Cranked-Up Garage</h1>
 		<p>Specialized in Finding the Best Possible Used Bikes at the Best Possible Price</p>
@@ -111,11 +181,12 @@
 		</form>
 	</div>
 
+<!-- Quick About blurb -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-8">
 				<h2>About Cranked-Up Garage</h2>
-				<h4>blah blahg b;ah write whatever you want in here and dont stop</h4>
+				<h4>blah blahg blah write whatever you want in here and dont stop</h4>
 				<p>maybe even talk some more about whatever here</p>
 				<button class="btn btn-default btn-lg">Get in Touch</button>
 			</div>
@@ -125,6 +196,7 @@
 		</div>
 	</div>
 
+<!-- Here's what we do stuff -->
 	<div class="container-fluid bg-grey">
 		<div class="row">
 			<div class="col-sm-4">
@@ -138,6 +210,7 @@
 		</div>
 	</div>
 
+<!-- Services and specials of the day -->
 <div class="container-fluid text-center">
 	<h2>Services and Specials</h2>
 	<h4>What Cranked-Up Garage Offers</h4>
@@ -179,7 +252,7 @@
 	</div>
 </div>
 
-
+<!-- Recent Projects and links and stuff -->
 <div class="container-fluid text-center bg-grey">
 	<h2>Bikes We've Worked On</h2>
 	<h4>A Brief Collection of Recent Projects</h4>
@@ -208,6 +281,7 @@
 	</div>
 </div>
 
+<!-- What our non-exisistant clients say -->
 <h2 class="text-center">What our customers say</h2>
 <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
   <!-- Indicators -->
@@ -242,7 +316,7 @@
 </div>
 
 
-
+<!-- Call me maybe? -->
 <div class="container-fluid bg-grey">
 	<h2 class="text-center">CONTACT</h2>
 	<div class="row">
@@ -283,9 +357,46 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
 }
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</div>
+
+<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<a href="#" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>Site Made by the world's coolest web developer-----Carla  <a href="#" title="check out my stuff">thecarla.com</a></p>
+	</footer>
+
+
+<!-- Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
-
-
-
+</body>
