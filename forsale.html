@@ -51,7 +51,14 @@
 		color: #818181;
 	}
 
-		}
+	.jumbotron {
+		background-color: #f4511e;
+		color: #ffffff 
+		padding: 100px 25px;
+		font-family: Montserrat, sans-serif;
+		height:400px;
+	}
+	
 
 	footer .glyphicon {
 		font-size: 20px;
@@ -62,7 +69,18 @@
 	footer {
 		background-color: #7a1daf;
 	}
+	@media screen and (max-width: 786px){
+		.col-sm-4 {
+			text-align: center;
+			margin: 25px 0;
+		}
+	}
+ p {
+ 	font-size: 20px;
+ 	text-align: center;
+ 	padding: 0px 25px;
 
+ }
 
 </style>
 
@@ -70,6 +88,7 @@
 
 
 <!-- Navbar -->
+<div>
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class= "container">
 			<div class="navbar-header">
@@ -91,13 +110,17 @@
 			</div>
 		</div>
 	</nav>	
-
-	<div class="jumbotron">
-		<h2>whatever</h2>
-	</div>
+</div>
 
 
 
+<!-- jumbotron -->
+	
+<div class="jumbotron text-center">
+	<h1>See our Perfect Bikes For Sale</h1>
+	<p>Well, perfectly used bikes</p>
+	<p>click on a bike to see more information</p>
+</div>
 
 <!-- Footer -->
 	<footer class="container-fluid text-center">
